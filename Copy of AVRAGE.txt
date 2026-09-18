@@ -1,0 +1,42 @@
+#include<iostream.h>
+#include<conio.h>
+#include<iostream.h>
+
+void main()
+{
+    int avg, grade;
+
+    clrscr();
+
+    cout << "Enter average marks: ";
+    cin >> avg;
+
+    grade = avg / 10;
+
+    switch(grade)
+    {
+        case 10:
+        case 9:
+        case 8:
+        case 7:
+            cout << "Distinction";
+            break;
+
+        case 6:
+            cout << "First Class";
+            break;
+
+        case 5:
+            cout << "Second Class";
+            break;
+
+        case 4:
+            cout << "Pass";
+            break;
+
+        default:
+            cout << "Try Again";
+    }
+
+    getch();
+}
